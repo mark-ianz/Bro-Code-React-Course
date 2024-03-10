@@ -1,0 +1,54 @@
+#stopwatch-container {
+  border: solid 3px black;
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+#time {
+  font-size: 36px;
+}
+
+#controls {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  border: solid 1px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  color: white;
+  transition: filter 200ms;
+}
+
+#start {
+  background-color: green;
+}
+
+#stop {
+  background-color: red;
+}
+
+#reset {
+  background-color: skyblue;
+}
+
+#start:hover,
+#stop:hover,
+#reset:hover {
+  filter: saturate(.7);
+}
+
+#start:active,
+#stop:active,
+#reset:active {
+  filter: opacity(.7);
+}
+
+body {
+  padding: 30px;
+}
