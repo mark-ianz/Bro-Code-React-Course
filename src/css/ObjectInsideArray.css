@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+#container {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.edit-buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.edit-button {
+  width: 30%;
+}
+
+.edit-buttons {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.save-edit {
+  background-color: green;
+}
+
+.save-edit:hover {
+  filter: brightness(110%);
+}
+
+.cancel-edit {
+  background-color: red;
+}
+
+.cancel-edit:hover {
+  filter: brightness(90%);
+}
+
+.delete-car {
+  background-color: black;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.color-input {
+  border: none;
+  border-bottom: solid 1px;
+}
+
+.add-color-option {
+  margin-top: 10px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: rgb(212, 212, 212);
+  transition: 200ms;
+}
+
+.add-color-option:hover {
+  filter: brightness(105%);
+}
+
+.add-color-input-container {
+  display: inline-flex;
+  position: relative;
+}
+
+.color-container {
+  position: relative;
+  display: inline-flex;
+}
+
+.remove-color {
+  top: 20%;
+  right: -10%;
+}
+
+.color-button {
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1/1;
+  font-size: 8px;
+  border-radius: 50%;
+  border: solid 1px;
+  position: absolute;
+  outline: none;
+}
+
+.save-color-button {
+  top: 4px;
+  right: -10%;
+}
+
+.cancel-add-color-button {
+  top: 4px;
+  right: -20%;
+}
+
+/* ADD CARS */
+
+.add-cars-container {
+  width: 300px;
+  aspect-ratio: 1/1.5;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 30px;
+  transition: 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.add-cars-container p {
+  font-size: 24px;
+  color: white;
+  transition: 200ms;
+}
+
+.add-cars-container svg {
+  transition: 200ms;
+}
+
+.add-cars-container:hover {
+  width: 310px;
+  margin-left: -5px;
+  opacity: .6;
+}
+
+.add-cars-container:hover p {
+  filter: brightness(20%);
+}
+
+.add-cars-container:hover svg {
+  filter: brightness(20%);
+}
